@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="custom.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+    <!--  NAVBAR
+    ===========================================-->
+    <nav class="navbar">
+            <div class="menu">
+                <ion-icon ios="menu-outline" md="menu-sharp"></ion-icon>
+            </div>
+            <div class="lang">eng</div>
+            <div class="search">
+                <ion-icon ios="search-outline" md="search-sharp"></ion-icon>
+            </div>
+      </nav>
+
+
+    <!--  SOCIAL MEDIA
+    ===========================================-->
+    <div class="media">
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+    </div>
+
+
+    <!--TEXT
+    ==========================================-->
+        <div class="text">
+            <h1>toni&guy</h1>
+            <h3>collection 2021 <br>duality</h3>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quis, delectus facere
+            neque sunt commodi quae
+            culpa dolores doloribus magnam</p>
+        </div>
+
+    <!--SPONSORS
+    ==========================================-->
+        <div class="sponsor">
+            <img src="./images/sponsor-logo.png" alt="" >
+            <p>official sponsor</p>
+        </div>
+
+    <!--DISTORTIONS
+    ==========================================-->
+        <div class="distortion">
+
+        </div>
+</div>
+    <!--  SCRIPTS
+    ===========================================-->
+    <!-- icons -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+  <!-- three js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+  <!-- hover-effect js -->
+  <script src="./hover-effect.umd.js"></script>
+
+  <script>
+      new hoverEffect({
+      parent: document.querySelector('.distortion'),
+      intensity: 0.2,
+      image1: './images/01.png',
+      image2: './images/02.png',
+      displacementImage: './images/diss.png',
+      imagesRatio: 380 / 300
+    })
+    
+  </script>
+</body>
+</html>
